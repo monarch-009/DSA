@@ -18,6 +18,6 @@ int main()
     cout << "Enter the number: " << endl;
     cin >> n;
     int fact = factorial(n);
-    cout << "Factorail is " << fact << endl;
+    cout << "Factorial is " << fact << endl;
     return 0;
 }

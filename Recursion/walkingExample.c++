@@ -7,7 +7,7 @@ void reachHome(int src, int dest)
     // base Case
     if (src == dest)
     {
-        cout << "Reacged Home" << endl;
+        cout << "Reached Home" << endl;
         return;
     }
 

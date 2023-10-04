@@ -1,8 +1,19 @@
 #include <iostream>
 using namespace std;
 
-bool search(int *arr, int size, int key)
+void print(int *arr, int size)
 {
+    cout << "Size of an Array is " << size << "." << endl;
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+bool linearSearch(int *arr, int size, int key)
+{
+    print(arr, size);
     if (size == 0)
     {
         return false;
@@ -11,7 +22,7 @@ bool search(int *arr, int size, int key)
     {
         return true;
     }
-    search(arr + 1, size - 1, key);
+    linearSearch(arr + 1, size - 1, key);
 }
 
 int main()
@@ -30,7 +41,7 @@ int main()
     cout << "Enter the key for Search: ";
     cin >> key;
 
-    bool ans = search(arr, size, key);
+    bool ans = linearSearch(arr, size, key);
     if (ans)
     {
         cout << "Element is in array." << endl;

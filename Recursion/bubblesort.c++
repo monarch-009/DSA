@@ -13,6 +13,7 @@ void sortArrya(int *arr, int size)
             swap(arr[i] ,arr[i+1]);
         }
     }
+    //Recursive call 
     sortArrya(arr,size-1);
     
 }

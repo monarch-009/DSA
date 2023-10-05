@@ -19,7 +19,7 @@ bool checkPalindrom(string str,int i,int j)
  
 int main()
 {
-    string name = "xbcwcb";
+    string name = "maam";
     //cout<<endl;
     bool ispalindrome = checkPalindrom(name,0,name.length()-1);
     if(ispalindrome){

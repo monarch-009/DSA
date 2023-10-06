@@ -15,13 +15,13 @@ int main()
         cin >> arr[i];
     }
 
-    int pos;
-    cout << "Enter the position at which we have to insert the element: ";
-    cin >> pos;
-
     int val;
     cout << "Enter the value to insert in array : ";
     cin >> val;
+
+    int pos;
+    cout << "Enter the position at which value have to insert: ";
+    cin >> pos;
 
     // increase the size by 1
     size++;
@@ -33,8 +33,7 @@ int main()
     // insert x at pos
     arr[pos - 1] = val;
 
-
-    //print final array
+    // print final array
     cout << "Final array is ";
     for (int i = 0; i < size; i++)
     {

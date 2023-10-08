@@ -24,11 +24,11 @@ int main()
     cout << "Enter the position to delete the element: ";
     cin >> pos;
 
-    for (int i = pos+1; i < size; i++)
+    for (int i = pos; i < size; i++)
     {
         arr[i] = arr[i + 1];
     }
-    cout << "Final Array: ";
+    cout << "Final Array:- ";
     for (int i = 0; i < size-1; i++)
     {
         cout << arr[i] << " ";

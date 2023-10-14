@@ -43,7 +43,7 @@ int main()
     Student *s2 = new Student;
     // (*s2).getdata();
     // (*s2).print();
-    s2->getdata();
+    s2->getdata();  // insted of using pointer * we can use ->
     s2->print();
 
     return 0;

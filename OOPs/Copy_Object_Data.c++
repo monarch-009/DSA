@@ -28,23 +28,15 @@ public:
         cout << "Mark : " << mark << endl;
     }
 };
-
 int main()
 {
-    // creation of object
-    // Static Allocation
-    // Student s1;
-    // cout << sizeof(s1) << endl; // To check the Size of Object
+    Student s1;
+    s1.getdata();
+    s1.print();
 
-    // s1.getdata();
-    // s1.print();
+    Student s2(s1); //Copy 
+    s2.print();
 
-    // Dynamically Allocation
-    Student *s2 = new Student;
-    // (*s2).getdata();
-    // (*s2).print();
-    s2->getdata(); // insted of using pointer * we can use ->
-    s2->print();
-
+    
     return 0;
 }

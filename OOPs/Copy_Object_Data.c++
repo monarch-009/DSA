@@ -34,7 +34,7 @@ int main()
     s1.getdata();
     s1.print();
 
-    Student s2(s1); //Copy 
+    Student s2(s1); //Copy Constructor 
     s2.print();
 
     

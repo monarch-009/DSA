@@ -27,6 +27,10 @@ public:
         cout << "Roll number: " << roll_no << endl;
         cout << "Mark : " << mark << endl;
     }
+    static int random()
+    {
+        return room;
+    }
 };
 
 int Student ::room = 10;

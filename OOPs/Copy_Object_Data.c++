@@ -9,8 +9,13 @@ class Student
     char name[20];
     int roll_no;
     float mark;
+
     // Function memeber
 public:
+    Student()
+    {
+        cout << "Simple Constuctor Called." << endl;
+    }
     void getdata(void) // Function to take data
     {
         cout << "Enter the name: ";
@@ -34,9 +39,8 @@ int main()
     s1.getdata();
     s1.print();
 
-    Student s2(s1); //Copy Constructor 
+    Student s2(s1); // Copy Constructor
     s2.print();
 
-    
     return 0;
 }

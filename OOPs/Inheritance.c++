@@ -35,7 +35,7 @@ public:
     }
 };
 // Male Class
-class Male : public Humam
+class Male : public Humam // inInheritance from Human Class
 {
 public:
     string name;

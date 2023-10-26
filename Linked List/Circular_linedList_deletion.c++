@@ -52,6 +52,11 @@ void insertnode(Node *&tail, int element, int d)
 void print(Node *tail)
 {
     Node *temp = tail;
+    if (tail == NULL)
+    {
+        cout << "List is empty." << endl;
+    }
+
     do
     {
         cout << tail->data << " ";
@@ -80,11 +85,17 @@ void deletenode(Node *&tail, int value)
             current = current->next;
         }
         prev->next = current->next;
-        if (tail==current)
+        // 1 node Linked List
+        if (current == prev)
         {
-            tail= prev;
+            tail = NULL;
         }
-        
+        //>= 2
+        if (tail == current)
+        {
+            tail = prev;
+        }
+
         current->next = NULL;
         delete current;
     }
@@ -107,7 +118,7 @@ int main()
     insertnode(tail, 5, 10);
     print(tail);
 
-    deletenode(tail,3); // delete form the node 
+    deletenode(tail, 3); // delete form the node
     print(tail);
 
     return 0;

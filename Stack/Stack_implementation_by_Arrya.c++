@@ -76,7 +76,7 @@ int main()
     st.push(60);
     st.push(40);
     st.push(20);
-    st.push(10);//Stack Overflow
+    st.push(10); // Stack Overflow
 
     cout << st.peek() << endl;
 
@@ -97,11 +97,12 @@ int main()
 
     if (st.isEmpty())
     {
-        cout<<"Stack is Empty."<<endl;
+        cout << "Stack is Empty." << endl;
     }
-    else{
-        cout<<"Stack is not Empty."<<endl;
+    else
+    {
+        cout << "Stack is not Empty." << endl;
     }
-    
+
     return 0;
 }

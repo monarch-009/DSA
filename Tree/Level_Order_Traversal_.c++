@@ -21,7 +21,6 @@ node *buildTree(node *root)
     cout << "Enter the data: " << endl;
     int data;
     cin >> data;
-    
     root = new node(data);
 
     if (data == -1)
@@ -36,11 +35,13 @@ node *buildTree(node *root)
     return root;
 }
 
+void levelOrderTraversal(node*root){ //level- Order -  Traversal
+
+}
+
 int main()
 {
     node *root = NULL;
-
-    //create a tree
     root = buildTree(root);
 
     return 0;
